@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AA708F08284B718900523F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F07284B718900523F59 /* AppDelegate.swift */; };
 		AA708F0A284B718900523F59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F09284B718900523F59 /* SceneDelegate.swift */; };
-		AA708F0C284B718900523F59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F0B284B718900523F59 /* ViewController.swift */; };
 		AA708F0F284B718900523F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA708F0D284B718900523F59 /* Main.storyboard */; };
 		AA708F12284B718900523F59 /* MVPHomeWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA708F10284B718900523F59 /* MVPHomeWork.xcdatamodeld */; };
 		AA708F14284B718D00523F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA708F13284B718D00523F59 /* Assets.xcassets */; };
@@ -17,6 +16,12 @@
 		AA708F22284B718D00523F59 /* MVPHomeWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F21284B718D00523F59 /* MVPHomeWorkTests.swift */; };
 		AA708F2C284B718D00523F59 /* MVPHomeWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F2B284B718D00523F59 /* MVPHomeWorkUITests.swift */; };
 		AA708F2E284B718D00523F59 /* MVPHomeWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F2D284B718D00523F59 /* MVPHomeWorkUITestsLaunchTests.swift */; };
+		AA708F42284B735300523F59 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F41284B735300523F59 /* Person.swift */; };
+		AA708F44284B74E900523F59 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F43284B74E900523F59 /* FirstViewController.swift */; };
+		AA708F47284B76EF00523F59 /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F46284B76EF00523F59 /* FirstPresenter.swift */; };
+		AA708F4A284B774800523F59 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA708F49284B774800523F59 /* FirstViewController.xib */; };
+		AA708F4C284B784D00523F59 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F4B284B784D00523F59 /* ModuleBuilder.swift */; };
+		AA708F51284B7C8100523F59 /* FirstModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F50284B7C8100523F59 /* FirstModuleTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,6 @@
 		AA708F04284B718900523F59 /* MVPHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA708F07284B718900523F59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA708F09284B718900523F59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA708F0B284B718900523F59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA708F0E284B718900523F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA708F11284B718900523F59 /* MVPHomeWork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVPHomeWork.xcdatamodel; sourceTree = "<group>"; };
 		AA708F13284B718D00523F59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		AA708F27284B718D00523F59 /* MVPHomeWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPHomeWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA708F2B284B718D00523F59 /* MVPHomeWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPHomeWorkUITests.swift; sourceTree = "<group>"; };
 		AA708F2D284B718D00523F59 /* MVPHomeWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPHomeWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA708F41284B735300523F59 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		AA708F43284B74E900523F59 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		AA708F46284B76EF00523F59 /* FirstPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
+		AA708F49284B774800523F59 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		AA708F4B284B784D00523F59 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModuleBuilder.swift; path = "MVPHomeWork/Supporting Files/ModuleBuilder.swift"; sourceTree = SOURCE_ROOT; };
+		AA708F50284B7C8100523F59 /* FirstModuleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModuleTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +111,10 @@
 		AA708F06284B718900523F59 /* MVPHomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				AA708F07284B718900523F59 /* AppDelegate.swift */,
-				AA708F09284B718900523F59 /* SceneDelegate.swift */,
-				AA708F0B284B718900523F59 /* ViewController.swift */,
-				AA708F0D284B718900523F59 /* Main.storyboard */,
+				AA708F48284B770100523F59 /* FirstModule */,
+				AA708F3B284B71AA00523F59 /* Storyboards */,
+				AA708F3A284B719700523F59 /* Supporting Files */,
 				AA708F13284B718D00523F59 /* Assets.xcassets */,
-				AA708F15284B718D00523F59 /* LaunchScreen.storyboard */,
 				AA708F18284B718D00523F59 /* Info.plist */,
 				AA708F10284B718900523F59 /* MVPHomeWork.xcdatamodeld */,
 			);
@@ -117,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				AA708F21284B718D00523F59 /* MVPHomeWorkTests.swift */,
+				AA708F4F284B7C4F00523F59 /* FirstModuleTest */,
 			);
 			path = MVPHomeWorkTests;
 			sourceTree = "<group>";
@@ -128,6 +137,68 @@
 				AA708F2D284B718D00523F59 /* MVPHomeWorkUITestsLaunchTests.swift */,
 			);
 			path = MVPHomeWorkUITests;
+			sourceTree = "<group>";
+		};
+		AA708F3A284B719700523F59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F4B284B784D00523F59 /* ModuleBuilder.swift */,
+				AA708F07284B718900523F59 /* AppDelegate.swift */,
+				AA708F09284B718900523F59 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA708F3B284B71AA00523F59 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F0D284B718900523F59 /* Main.storyboard */,
+				AA708F15284B718D00523F59 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AA708F3C284B71C700523F59 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F46284B76EF00523F59 /* FirstPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AA708F3D284B71D600523F59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F41284B735300523F59 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA708F3E284B71E300523F59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F43284B74E900523F59 /* FirstViewController.swift */,
+				AA708F49284B774800523F59 /* FirstViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA708F48284B770100523F59 /* FirstModule */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F3E284B71E300523F59 /* View */,
+				AA708F3D284B71D600523F59 /* Model */,
+				AA708F3C284B71C700523F59 /* Presenter */,
+			);
+			path = FirstModule;
+			sourceTree = "<group>";
+		};
+		AA708F4F284B7C4F00523F59 /* FirstModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F50284B7C8100523F59 /* FirstModuleTest.swift */,
+			);
+			path = FirstModuleTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +308,7 @@
 				AA708F17284B718D00523F59 /* LaunchScreen.storyboard in Resources */,
 				AA708F14284B718D00523F59 /* Assets.xcassets in Resources */,
 				AA708F0F284B718900523F59 /* Main.storyboard in Resources */,
+				AA708F4A284B774800523F59 /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA708F0C284B718900523F59 /* ViewController.swift in Sources */,
+				AA708F42284B735300523F59 /* Person.swift in Sources */,
 				AA708F08284B718900523F59 /* AppDelegate.swift in Sources */,
 				AA708F0A284B718900523F59 /* SceneDelegate.swift in Sources */,
+				AA708F47284B76EF00523F59 /* FirstPresenter.swift in Sources */,
+				AA708F4C284B784D00523F59 /* ModuleBuilder.swift in Sources */,
+				AA708F44284B74E900523F59 /* FirstViewController.swift in Sources */,
 				AA708F12284B718900523F59 /* MVPHomeWork.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA708F51284B7C8100523F59 /* FirstModuleTest.swift in Sources */,
 				AA708F22284B718D00523F59 /* MVPHomeWorkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
