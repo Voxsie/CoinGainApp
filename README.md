@@ -1,12 +1,11 @@
 # CoinGain CryptoApp
 Небольшое приложение для отслеживания курса сотен популярных криптовалют
 
+<a href="url"><img src="https://cdn.discordapp.com/attachments/943871068983148584/983028017641189436/IMG_3092.png" align="left" height="500" ></a>
+<a href="url"><img src="https://cdn.discordapp.com/attachments/943871068983148584/983028017997676685/IMG_3094.png" align="left" height="500" ></a>
 
-Темная тема:
-<img src="https://user-images.githubusercontent.com/link-to-your-image.png" width="200" />
-<img src="[https://user-images.githubusercontent.com/link-to-your-image.png](https://user-images.githubusercontent.com/72042693/172058043-2232101c-5ead-4193-9724-a253dc914c7d.png)" width="200" />
+<a href="url"><img src="https://cdn.discordapp.com/attachments/943871068983148584/983028032895856651/IMG_3093.png" align="left" height="500" ></a>
+<a href="url"><img src="https://cdn.discordapp.com/attachments/943871068983148584/983028032895856651/IMG_3093.png" align="left" height="500" ></a>
+  
 
-Светлая тема:
-![image](https://user-images.githubusercontent.com/72042693/172058122-160bb2fb-a01f-47c4-a26c-f225702f95a5.png)
-![image](https://user-images.githubusercontent.com/72042693/172058080-2dfb6cf1-8614-489a-bc5b-4e66297ee775.png)
-
+  
