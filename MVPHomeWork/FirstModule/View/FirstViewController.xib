@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="MVPHomeWork" customModuleProvider="target">
             <connections>
-                <outlet property="greetingLabel" destination="GhK-iq-yMd" id="VvJ-SV-gWG"/>
+                <outlet property="tableView" destination="Xhe-Ay-5eJ" id="JRt-46-LCn"/>
                 <outlet property="view" destination="iN0-l3-epB" id="YGZ-da-AzQ"/>
             </connections>
         </placeholder>
@@ -19,35 +19,31 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VDR-E2-d07">
-                    <rect key="frame" x="20" y="427.5" width="374" height="51.5"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhK-iq-yMd">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiW-zY-FFN">
-                            <rect key="frame" x="0.0" y="20.5" width="374" height="31"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            <connections>
-                                <action selector="didContinueButton:" destination="-1" eventType="touchUpInside" id="Rc8-QK-s6F"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Xhe-Ay-5eJ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoinGain CryptoApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2iZ-rC-xts">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lmp-IJ-6gR"/>
+                        <outlet property="delegate" destination="-1" id="flb-3s-K9Z"/>
+                    </connections>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="VDR-E2-d07" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Aic-bv-Uvb"/>
-                <constraint firstItem="VDR-E2-d07" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="gcm-Sp-zIr"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VDR-E2-d07" secondAttribute="trailing" constant="20" id="p61-tZ-IIT"/>
-                <constraint firstItem="VDR-E2-d07" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="vFP-Vh-Tmf"/>
+                <constraint firstItem="Xhe-Ay-5eJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0uF-jd-kpZ"/>
+                <constraint firstItem="Xhe-Ay-5eJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="G8k-zT-OdL"/>
+                <constraint firstItem="Xhe-Ay-5eJ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="jv6-1g-Wa9"/>
+                <constraint firstItem="Xhe-Ay-5eJ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="k7x-8d-dKt"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="110"/>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </view>
     </objects>
     <resources>

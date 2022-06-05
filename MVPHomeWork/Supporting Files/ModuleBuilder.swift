@@ -9,19 +9,27 @@ import UIKit
 
 protocol Builder {
     static func createModule() -> UIViewController
+    static func createSecondModule(cryptocoin: Cryptocoin?) -> UIViewController
 }
 
 //DI - Внедрение зависимостей, то есть они создаются не внутри этих сущностей, а снаружи, а потом инжектятся
 
 class ModuleBuilder: Builder {
     static func createModule() -> UIViewController {
-        let model = Person(firstName: "David", lastName: "Blaine")
         let view = FirstViewController()
-        let presenter = FirstPresenter(view: view, person: model)
+        let networkService = NetworkService()
+        let presenter = FirstPresenter(view: view, networkService: networkService)
         view.presenter = presenter
         
         return view
     }
     
-    
+    static func createSecondModule(cryptocoin: Cryptocoin?) -> UIViewController {
+        let view = SecondViewController()
+        let networkService = NetworkService()
+        let presenter = SecondPresenter(view: view, networkService: networkService, cryptocoin: cryptocoin)
+        view.presenter = presenter
+        
+        return view
+    }
 }

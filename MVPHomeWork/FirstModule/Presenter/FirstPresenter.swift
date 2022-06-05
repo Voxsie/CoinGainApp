@@ -9,29 +9,41 @@ import Foundation
 
 // FirstViewProtocol - SOLI(D) - Абстрагируемся
 protocol FirstViewProtocol: AnyObject {
-    func setGreeting(greeting: String)
+    func success()
+    func failure(error: Error)
 }
 
 // Используем несколько протоков - SOL(I)D - Лучше несколько интерфейсов, чем один громоздский
 protocol FirstViewPresenterProtocol: AnyObject {
-    init(view: FirstViewProtocol, person: Person)
-    func showGreeting()
+    init(view: FirstViewProtocol, networkService: NetworkServiceProtocol)
+    func getCryptocoins()
+    var cryptoCoins: [Cryptocoin]? {get set}
 }
 
 class FirstPresenter: FirstViewPresenterProtocol {
+    weak var view: FirstViewProtocol?
+    let networkService: NetworkServiceProtocol!
+    var cryptoCoins: [Cryptocoin]?
     
-    let view: FirstViewProtocol
-    let person: Person
-    
-    required init(view: FirstViewProtocol, person: Person) {
+    required init(view: FirstViewProtocol, networkService: NetworkServiceProtocol) {
         self.view = view
-        self.person = person
+        self.networkService = networkService
+        getCryptocoins()
     }
     
-    func showGreeting() {
-        let greeting = (self.person.firstName ?? "") + " " + (self.person.lastName ?? "")
-        self.view.setGreeting(greeting: greeting)
+    func getCryptocoins() {
+        networkService.getCryptocoins { [weak self] result in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let response):
+                    print(response)
+                    self.cryptoCoins = response?.result
+                    self.view?.success()
+                case .failure(let error):
+                    self.view?.failure(error: error)
+                }
+            }
+        }
     }
-    
-    
 }

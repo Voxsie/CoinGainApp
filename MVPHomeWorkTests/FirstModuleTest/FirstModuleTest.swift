@@ -10,6 +10,15 @@ import XCTest
 
 class MockView: FirstViewProtocol {
     
+    func success() {
+        return
+    }
+    
+    func failure(error: Error) {
+        return
+    }
+    
+    
     var titleTest: String?
     
     func setGreeting(greeting: String) {
@@ -20,39 +29,32 @@ class MockView: FirstViewProtocol {
 class FirstModuleTest: XCTestCase {
     
     var view: MockView!
-    var person: Person!
     var presenter: FirstPresenter!
     
     override func setUp() {
         view = MockView()
         //Baz Bar Foo - тестовые "имена"
-        person = Person(firstName: "Baz", lastName: "Bar")
-        presenter = FirstPresenter(view: view, person: person)
     }
     
     override func tearDown() {
         view = nil
-        person = nil
         presenter = nil
     }
     
     func ModuleIsNotNil() {
         XCTAssertNotNil(view, "view is not nil")
-        XCTAssertNotNil(person, "view is not nil")
         XCTAssertNotNil(presenter, "view is not nil")
     }
     
     func testView() {
-        presenter.showGreeting()
-        XCTAssertEqual(view.titleTest, "Baz Bar" )
     }
     
-    // проверка на сет
-    func testPerson() {
-        XCTAssertEqual(person.firstName, "Baz")
-        XCTAssertEqual(person.lastName, "Bar")
-//
+//    // проверка на сет
+//    func testPerson() {
 //        XCTAssertEqual(person.firstName, "Baz")
-//        XCTAssertEqual(person.lastName, "Baz")
-    }
+//        XCTAssertEqual(person.lastName, "Bar")
+////
+////        XCTAssertEqual(person.firstName, "Baz")
+////        XCTAssertEqual(person.lastName, "Baz")
+//    }
 }
