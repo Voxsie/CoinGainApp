@@ -3,10 +3,10 @@
 
 
 Темная тема:
-![image](https://user-images.githubusercontent.com/72042693/172058033-b46315a2-8376-45f7-b8f2-d3ce5ccb7cd6.png)
-![image](https://user-images.githubusercontent.com/72042693/172058043-2232101c-5ead-4193-9724-a253dc914c7d.png)
+<img src="https://user-images.githubusercontent.com/link-to-your-image.png" width="200" />
+<img src="[https://user-images.githubusercontent.com/link-to-your-image.png](https://user-images.githubusercontent.com/72042693/172058043-2232101c-5ead-4193-9724-a253dc914c7d.png)" width="200" />
 
 Светлая тема:
-![image](https://user-images.githubusercontent.com/72042693/172058073-ac6df7c7-df4c-467a-8927-6a4cd39ebfc7.png)
+![image](https://user-images.githubusercontent.com/72042693/172058122-160bb2fb-a01f-47c4-a26c-f225702f95a5.png)
 ![image](https://user-images.githubusercontent.com/72042693/172058080-2dfb6cf1-8614-489a-bc5b-4e66297ee775.png)
 
