@@ -26,6 +26,13 @@
 		AA708F60284CA42400523F59 /* Cryptocoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F5F284CA42400523F59 /* Cryptocoin.swift */; };
 		AA708F62284CA66600523F59 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F61284CA66600523F59 /* Response.swift */; };
 		AA708F64284CB24100523F59 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F63284CB24100523F59 /* NetworkService.swift */; };
+		AA708F6B284CECA900523F59 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F6A284CECA800523F59 /* SecondPresenter.swift */; };
+		AA708F6E284CF18A00523F59 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F6C284CF18A00523F59 /* SecondViewController.swift */; };
+		AA708F6F284CF18A00523F59 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA708F6D284CF18A00523F59 /* SecondViewController.xib */; };
+		AA708F72284CF1BB00523F59 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F70284CF1BB00523F59 /* InfoTableViewCell.swift */; };
+		AA708F73284CF1BB00523F59 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA708F71284CF1BB00523F59 /* InfoTableViewCell.xib */; };
+		AA708F79284CF2FC00523F59 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA708F77284CF2FC00523F59 /* HeaderTableViewCell.swift */; };
+		AA708F7A284CF2FC00523F59 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA708F78284CF2FC00523F59 /* HeaderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,13 @@
 		AA708F5F284CA42400523F59 /* Cryptocoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocoin.swift; sourceTree = "<group>"; };
 		AA708F61284CA66600523F59 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		AA708F63284CB24100523F59 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AA708F6A284CECA800523F59 /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		AA708F6C284CF18A00523F59 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AA708F6D284CF18A00523F59 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		AA708F70284CF1BB00523F59 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		AA708F71284CF1BB00523F59 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		AA708F77284CF2FC00523F59 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AA708F78284CF2FC00523F59 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +133,7 @@
 		AA708F06284B718900523F59 /* MVPHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				AA708F66284CEC4A00523F59 /* SecondModule */,
 				AA708F65284CB24D00523F59 /* ServiceLayer */,
 				AA708F48284B770100523F59 /* FirstModule */,
 				AA708F3B284B71AA00523F59 /* Storyboards */,
@@ -229,6 +244,68 @@
 			path = ServiceLayer;
 			sourceTree = "<group>";
 		};
+		AA708F66284CEC4A00523F59 /* SecondModule */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F69284CEC9600523F59 /* Presenter */,
+				AA708F68284CEC9100523F59 /* View */,
+				AA708F67284CEC8C00523F59 /* Model */,
+			);
+			path = SecondModule;
+			sourceTree = "<group>";
+		};
+		AA708F67284CEC8C00523F59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA708F68284CEC9100523F59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F6C284CF18A00523F59 /* SecondViewController.swift */,
+				AA708F6D284CF18A00523F59 /* SecondViewController.xib */,
+				AA708F74284CF2CD00523F59 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA708F69284CEC9600523F59 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F6A284CECA800523F59 /* SecondPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AA708F74284CF2CD00523F59 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F76284CF2E400523F59 /* HeaderCell */,
+				AA708F75284CF2D300523F59 /* InfoCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AA708F75284CF2D300523F59 /* InfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F70284CF1BB00523F59 /* InfoTableViewCell.swift */,
+				AA708F71284CF1BB00523F59 /* InfoTableViewCell.xib */,
+			);
+			path = InfoCell;
+			sourceTree = "<group>";
+		};
+		AA708F76284CF2E400523F59 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA708F77284CF2FC00523F59 /* HeaderTableViewCell.swift */,
+				AA708F78284CF2FC00523F59 /* HeaderTableViewCell.xib */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,6 +412,9 @@
 			files = (
 				AA708F17284B718D00523F59 /* LaunchScreen.storyboard in Resources */,
 				AA708F14284B718D00523F59 /* Assets.xcassets in Resources */,
+				AA708F73284CF1BB00523F59 /* InfoTableViewCell.xib in Resources */,
+				AA708F6F284CF18A00523F59 /* SecondViewController.xib in Resources */,
+				AA708F7A284CF2FC00523F59 /* HeaderTableViewCell.xib in Resources */,
 				AA708F0F284B718900523F59 /* Main.storyboard in Resources */,
 				AA708F5E284C9BF000523F59 /* CustomTableViewCell.xib in Resources */,
 				AA708F4A284B774800523F59 /* FirstViewController.xib in Resources */,
@@ -362,13 +442,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA708F72284CF1BB00523F59 /* InfoTableViewCell.swift in Sources */,
+				AA708F6E284CF18A00523F59 /* SecondViewController.swift in Sources */,
 				AA708F64284CB24100523F59 /* NetworkService.swift in Sources */,
 				AA708F08284B718900523F59 /* AppDelegate.swift in Sources */,
+				AA708F6B284CECA900523F59 /* SecondPresenter.swift in Sources */,
 				AA708F5D284C9BF000523F59 /* CustomTableViewCell.swift in Sources */,
 				AA708F60284CA42400523F59 /* Cryptocoin.swift in Sources */,
 				AA708F62284CA66600523F59 /* Response.swift in Sources */,
 				AA708F0A284B718900523F59 /* SceneDelegate.swift in Sources */,
 				AA708F47284B76EF00523F59 /* FirstPresenter.swift in Sources */,
+				AA708F79284CF2FC00523F59 /* HeaderTableViewCell.swift in Sources */,
 				AA708F4C284B784D00523F59 /* ModuleBuilder.swift in Sources */,
 				AA708F44284B74E900523F59 /* FirstViewController.swift in Sources */,
 				AA708F12284B718900523F59 /* MVPHomeWork.xcdatamodeld in Sources */,

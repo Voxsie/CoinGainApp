@@ -1,5 +1,5 @@
 //
-//  CustomTableViewCell.swift
+//  InfoTableViewCell.swift
 //  MVPHomeWork
 //
 //  Created by Илья Желтиков on 05.06.2022.
@@ -7,13 +7,10 @@
 
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
+class InfoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var oneHourChangeLabel: UILabel!
-    
+    @IBOutlet weak var infoLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -25,18 +25,38 @@ class FirstViewController: UIViewController {
 extension FirstViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return presenter.cryptoCoins?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath)
         let cryptocoin = presenter.cryptoCoins?[indexPath.row]
         if let coinCell = cell as? CustomTableViewCell {
-            coinCell.titleLabel.text = cryptocoin?.symbol
+            coinCell.titleLabel.text = "\(cryptocoin?.coinName ?? "") (\(cryptocoin?.symbol ?? ""))"
             coinCell.logoImageView.load(urlString: cryptocoin?.logo ?? "")
+            coinCell.oneHourChangeLabel.text = cryptocoin?.oneHChange
+            let oneHourChange = cryptocoin?.oneHChange ?? "-"
+            if oneHourChange[0] == "-" {
+                coinCell.priceLabel.textColor = .red
+                coinCell.oneHourChangeLabel.textColor = .red
+            }
+            else if (oneHourChange == "0.0%" || oneHourChange == "-0.0%") {
+                coinCell.priceLabel.textColor = .label
+                coinCell.oneHourChangeLabel.textColor = .label
+            }
+            else {
+                coinCell.priceLabel.textColor = .green
+                coinCell.oneHourChangeLabel.textColor = .green
+            }
             coinCell.priceLabel.text = cryptocoin?.price
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cryptocoin = presenter.cryptoCoins?[indexPath.row]
+        let secondViewController = ModuleBuilder.createSecondModule(cryptocoin: cryptocoin)
+        navigationController?.pushViewController(secondViewController, animated: true)
     }
 }
 
@@ -50,6 +70,12 @@ extension FirstViewController: FirstViewProtocol {
     func failure(error: Error) {
         showAlertWith(title: "Ошибка", message: "Проверьте соединение с интернетом")
     }
+}
+
+extension StringProtocol {
+subscript(offset: Int) -> Character {
+    self[index(startIndex, offsetBy: offset)]
+  }
 }
 
 extension UIViewController {
