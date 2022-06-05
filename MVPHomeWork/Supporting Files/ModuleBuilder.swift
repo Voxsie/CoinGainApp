@@ -15,9 +15,9 @@ protocol Builder {
 
 class ModuleBuilder: Builder {
     static func createModule() -> UIViewController {
-        let model = Person(firstName: "David", lastName: "Blaine")
         let view = FirstViewController()
-        let presenter = FirstPresenter(view: view, person: model)
+        let networkService = NetworkService()
+        let presenter = FirstPresenter(view: view, networkService: networkService)
         view.presenter = presenter
         
         return view
